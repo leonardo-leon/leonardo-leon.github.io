@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emiliano Salas - Lenguaje Corporal</title>
+    <link rel="icon" type="image/png" href="Images/E-S-Logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Spartan&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/styles.css">
+
+    
+</head>
+<body>
+    <header class="header" id="myHeader">
+        <div>
+            <figure class="logo">
+                <a href="index.html"> <img src="Images/E-S-header.png" alt="Logo de emiliano" ></a>                
+            </figure>
+        </div>
+        <nav class="menu">
+            <ol>
+                <li>
+                    <a href="Landing_Page.html"> Curso GRATIS</a>
+                </li>               
+                <li>
+                    <a href="#Ted"> Tedx</a>
+                </li>
+                <li>
+                    <a href="#Libro"> Libro</a>
+                 </li>
+            </ol>
+        </nav>
+    </header>
+    <div id = "fullPage">
+        <main class="intro s1">
+            <div>
+                <h1 class="Text-Intro">
+                    Soy <strong> Emiliano Salas </strong>  </br> Voy a ser tu Maestro de <strong> Lenguaje Corporal  </strong> 
+                 </h1>
+                 <h2>
+                     Quieres un curso <strong> gratis? </strong>  <br> Dejame tu nombre y tu correo para que te llege a tu mail :D
+                 </h2>
+            </div> 
+            <div class="form">
+                <form>
+                    <div class="form-group">
+                      <label for="Nombre">Nombre Completo</label>
+                      <input type="Nombre" class="form-control" id="Caja_Nombre" aria-describedby="Name" placeholder="Nombre Completo">
+                      <small id="NameHelp" class="form-text text-muted">No te arrepentiras.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="E-mail">Correo de E-Mail</label>
+                      <input type="E-Mail" class="form-control" id="E-Mail_NewsLetter" placeholder="E-Mail">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Suscribir</button>
+                  </form>
+            </div>  
+            <div class="img">
+                <img src="Images/conferencia.jfif" alt="Foto de emiliano posando" width=100%>
+            </div>                  
+            
+              
+        </main>
+        <div class="Tedx s2" id="Ted">
+            <h3>
+                Imparti una platica de Tedx puedes darle click a la imagen para verla :D
+            </h3>
+            <iframe width="400px" height="315" src="https://www.youtube.com/embed/qBX_0_Ehwrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis aut quia blanditiis atque a sequi rerum nisi minus voluptatibus maiores odio sapiente ipsam rem, animi totam obcaecati? Sequi, dolor numquam?</p>
+            
+        </div>
+
+        <div class="book s3" id="Libro">
+            <h3>
+                Mi libro luna de pluton ya esta a la venta :D 
+            </h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quos asperiores corrupti. Ducimus quia hic ipsum suscipit iusto voluptatem, sint modi omnis. Accusantium quis culpa dolorum, est sint voluptate repudiandae?            </p>
+                <iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://leer.amazon.com.mx/kp/card?asin=B07KX6HV9Q&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_WpTwEbFHKCHDT" ></iframe>
+            
+            
+            
+        </div>
+
+
+
+    </div>
+  
+<footer class="footer" id="Redes">
+    <div class="espacio">
+        <div class="redes">
+            <div class="facebook">
+                <figure> <a href="https://www.facebook.com/AxonLenguajeCorporal/" target="_blank"> <img src="Images/facebook(1).png" alt="facebook" width="28px"  ></a> </figure>   
+            </div>
+            <div class="instagram">
+                <figure> <a href="https://www.instagram.com/emilianosalasn/" target="_blank"> <img src="Images/instagram.png" alt="instagram" width="28px" ></a> </figure>   
+            </div>
+            <div class="youtube">
+                <figure> <a href="https://www.youtube.com/channel/UCNhG5cbTloWYfD3z-Z0YE6A" target="_blank"> <img src="Images/icons8-youtube-play-480.png" alt="youtube" width="28px" ></a> </figure>   
+            </div>
+        </div>
+        
+        <div class="text">
+            <p>Axon Lenguaje Corporal - Emiliano Salas 2020</p>
+        </div>
+
+    </div>
+    
+</footer>
+
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+
+    
+
+
+    
+</body>
+</html>
