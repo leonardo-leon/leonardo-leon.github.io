@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="Images/E-S-Logo.png">
     <link href="https://fonts.googleapis.com/css?family=Lato|Spartan&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 
     
 </head>
@@ -18,7 +18,7 @@
                 <a href="index.html"> <img src="Images/E-S-header.png" alt="Logo de emiliano" ></a>                
             </figure>
         </div>
-        <nav class="menu">
+        <!-- <nav class="menu">
             <ol>
                 <li>
                     <a href="Landing_Page.html"> Curso GRATIS</a>
@@ -30,86 +30,92 @@
                     <a href="#Libro"> Libro</a>
                  </li>
             </ol>
-        </nav>
+        </nav> -->
     </header>
-    <div id = "fullPage">
+    <div id = "body_container">
         <main class="intro s1">
-            <div>
-                <h1 class="Text-Intro">
+            <div class="espacio-s1">
+                <h1 class="text-intro">
                     Soy <strong> Emiliano Salas </strong>  </br> Voy a ser tu Maestro de <strong> Lenguaje Corporal  </strong> 
                  </h1>
-                 <h2>
-                     Quieres un curso <strong> gratis? </strong>  <br> Dejame tu nombre y tu correo para que te llege a tu mail :D
+                 <h2 class="text-gratis" >
+                     Quieres un curso <strong> gratis? </strong>  <br> Dejame tu nombre 
+                     y tu correo para que te llege a tu mail :D
                  </h2>
+                 <div class="form">
+                    <form>
+                        <div class="form-group">
+                          <label for="Nombre">Nombre Completo</label>
+                          <input type="Nombre" class="form-control" id="Caja_Nombre" aria-describedby="Name" placeholder="Nombre Completo">
+                          <small id="NameHelp" class="form-text text-muted">No te arrepentiras.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="E-mail">Correo de E-Mail</label>
+                          <input type="E-Mail" class="form-control" id="E-Mail_NewsLetter" placeholder="E-Mail">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Suscribir</button>
+                      </form>
+                </div>  
             </div> 
-            <div class="form">
-                <form>
-                    <div class="form-group">
-                      <label for="Nombre">Nombre Completo</label>
-                      <input type="Nombre" class="form-control" id="Caja_Nombre" aria-describedby="Name" placeholder="Nombre Completo">
-                      <small id="NameHelp" class="form-text text-muted">No te arrepentiras.</small>
-                    </div>
-                    <div class="form-group">
-                      <label for="E-mail">Correo de E-Mail</label>
-                      <input type="E-Mail" class="form-control" id="E-Mail_NewsLetter" placeholder="E-Mail">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Suscribir</button>
-                  </form>
-            </div>  
-            <div class="img">
-                <img src="Images/conferencia.jfif" alt="Foto de emiliano posando" width=100%>
+            <div class="s1-img">
+                <img  src="images/conferencia.jfif" alt="Foto de emiliano posando" width="100%" height="100%">
             </div>                  
             
               
         </main>
         <div class="Tedx s2" id="Ted">
-            <h3>
-                Imparti una platica de Tedx puedes darle click a la imagen para verla :D
-            </h3>
-            <iframe width="400px" height="315" src="https://www.youtube.com/embed/qBX_0_Ehwrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis aut quia blanditiis atque a sequi rerum nisi minus voluptatibus maiores odio sapiente ipsam rem, animi totam obcaecati? Sequi, dolor numquam?</p>
-            
+            <div class="tedx-details" > 
+                <h3 class="tedx-title">
+                    Imparti una platica de Tedx puedes darle click a la imagen para verla :D
+                </h3>
+                <p class="tedx-p" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis aut quia blanditiis atque a sequi rerum nisi minus voluptatibus maiores odio sapiente ipsam rem, animi totam obcaecati? Sequi, dolor numquam?</p>            
+            </div>   
+            <figure>
+                <div class="flexible-youtube"> <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/qBX_0_Ehwrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </figure>
+            </div>    
         </div>
-
         <div class="book s3" id="Libro">
-            <h3>
+            <div class="book-details">
+            <h3 class="book-title" >
                 Mi libro luna de pluton ya esta a la venta :D 
             </h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quos asperiores corrupti. Ducimus quia hic ipsum suscipit iusto voluptatem, sint modi omnis. Accusantium quis culpa dolorum, est sint voluptate repudiandae?            </p>
-                <iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://leer.amazon.com.mx/kp/card?asin=B07KX6HV9Q&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_WpTwEbFHKCHDT" ></iframe>
-            
-            
-            
+            <p class="book-p" >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quos asperiores corrupti. Ducimus quia hic ipsum suscipit iusto voluptatem, sint modi omnis. Accusantium quis culpa dolorum, est sint voluptate repudiandae?  
+            </p>
         </div>
-
-
-
-    </div>
-  
-<footer class="footer" id="Redes">
+        <figure>
+            <div class="flexible-book" >
+                <iframe class="kindle-book" type="text/html" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://leer.amazon.com.mx/kp/card?asin=B07KX6HV9Q&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_WpTwEbFHKCHDT" ></iframe>
+            </div>
+        </figure>
+        </div>
+    </div>  
     <div class="espacio">
-        <div class="redes">
-            <div class="facebook">
-                <figure> <a href="https://www.facebook.com/AxonLenguajeCorporal/" target="_blank"> <img src="Images/facebook(1).png" alt="facebook" width="28px"  ></a> </figure>   
+        <footer class="footer" id="Redes">
+            <div class="redes">
+                <div class="facebook">
+                    <figure> <a href="https://www.facebook.com/AxonLenguajeCorporal/" target="_blank"> <img src="Images/facebook(1).png" alt="facebook" width="32px"  ></a> </figure>   
+                </div>
+                <div class="instagram">
+                    <figure> <a href="https://www.instagram.com/emilianosalasn/" target="_blank"> <img src="Images/instagram.png" alt="instagram" width="32px" ></a> </figure>   
+                </div>
+                <div class="youtube">
+                    <figure> <a href="https://www.youtube.com/channel/UCNhG5cbTloWYfD3z-Z0YE6A" target="_blank"> <img src="Images/icons8-youtube-play-480.png" alt="youtube" width="42px" ></a> </figure>   
+                </div>                
+                    <div class="tik-tok">
+                        <figure> <a href=" https://www.tiktok.com/@emilianosalasn" target="_blank" > <img src="https://img.icons8.com/plasticine/48/000000/tiktok.png"> </a> </figure>     
+                    </div>
+                    <div class="linkedin">
+                        <figure> <a href="https://www.linkedin.com/in/emiliano-salas-b0190b167" target="_blank"> <img src="Images/linkedin.png" alt="linkedin" width="42px" > </a> </figure>
+                    </div>
             </div>
-            <div class="instagram">
-                <figure> <a href="https://www.instagram.com/emilianosalasn/" target="_blank"> <img src="Images/instagram.png" alt="instagram" width="28px" ></a> </figure>   
+            
+            <div class="footer-text">
+                <p>Axon Lenguaje Corporal - Emiliano Salas 2020</p>
             </div>
-            <div class="youtube">
-                <figure> <a href="https://www.youtube.com/channel/UCNhG5cbTloWYfD3z-Z0YE6A" target="_blank"> <img src="Images/icons8-youtube-play-480.png" alt="youtube" width="28px" ></a> </figure>   
-            </div>
-        </div>
-        
-        <div class="text">
-            <p>Axon Lenguaje Corporal - Emiliano Salas 2020</p>
-        </div>
-
+        </footer>
     </div>
-    
-</footer>
-
 
     <script>
         window.onscroll = function() {myFunction()};
