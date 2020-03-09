@@ -11,8 +11,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(1rem,1fr));
     max-width: 650px;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 
 
 }
@@ -76,7 +75,7 @@ body
    
 }
 
-.s1 strong
+strong
 {
     color: #D93829
 }
@@ -84,6 +83,18 @@ body
 {
     max-width: 100%;
 }
+.button
+{
+    background-color: #D93829;
+    color: white;
+    border: none;
+    
+    margin: 5px;
+    margin-left: 0;
+
+}
+
+
 .s2
 
 {
@@ -144,9 +155,28 @@ body
 {
     margin-bottom: 0;
 }
+.thank-you
+{
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 50px;
+    font-size: xx-large;
+    text-align: center;
+}
+.thank-you strong 
+{
+    
+    color: #D93829;
+}
+.thank-you button
+{
+    text-decoration: none;
+}
 .flexible-book
 {
-    width: 70%;
+    width: 60%;
     height: 0;
     padding-top: 163.69%;
     position: relative;
@@ -181,17 +211,17 @@ body
 }
 .facebook
 {
-    margin: 5px;
+    margin: 10px;
 
 }
 .instagram
 {
-    margin: 5px;
+    margin: 10px;
 
 }
 .youtube
 {
-    margin: 5px;
+    margin: 8px;
 }
 .tik-tok
 {
